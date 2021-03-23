@@ -1,0 +1,7 @@
+export default {
+    BLACK_COLOR: '#000000' ,
+    BLUE_COLOR: '#0000FF',
+    WHITE_COLOR: '#FFFFFF',
+    YELLOW_COLOR:'#FFFF00',
+    LIGHTYELLLOW_COLOR:'#DEC300'
+}
