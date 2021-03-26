@@ -6,7 +6,7 @@ import CustomTextInput from '../components/CustomTextInput.js';
 import Strings from '../utils/String.js';
 import {width, height} from '../styles/Layout';
 import footer from '../assets/images/artone.png';
-import IconMI from 'react-native-vector-icons/AntDesign';
+import IconMI from 'react-native-vector-icons/Entypo';
 
 const Verify = (props) => {
   const onPress = () => {};
@@ -19,7 +19,7 @@ const Verify = (props) => {
       </View>
       <View style={styles.Verification}>
         <View style={styles.iconBox}>
-          <IconMI name="check" size={40} color={Colors.DARKGREEN_COLOR} />
+          <IconMI name="bar-graph" size={40} color={Colors.DARKGREEN_COLOR} />
          </View>
         <CustomTextInput placeholder={Strings.placeholder.text} />
         <CustomButton buttonValue={Strings.button.otp} onPress={onPress} />
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     width: width*0.97
   },
   iconBox:{
-    marginRight:239
+    width:width*0.8,
   }
 });
 export default Verify;
