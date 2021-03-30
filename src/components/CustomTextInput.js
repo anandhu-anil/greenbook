@@ -1,37 +1,31 @@
 import React from 'react';
 import {View, Text, StyleSheet, TextInput} from 'react-native';
-import Colors from '../styles/Colors';
+import Colors from '../styles/Colors.js';
 import {width, height} from '../styles/Layout';
 
 const CustomTextInput = ({placeholder, onChangeText}) => {
   return (
-    <View style={styles.container}>
-      <TextInput
-        placeholder={placeholder}
-        style={styles.input}
-        onChangeText={onChangeText}
-      />
+    <View>
+      <View style={styles.container}>
+        <TextInput
+          placeholder={placeholder}
+          style={styles.input}
+          onChangeText={onChangeText}
+        />
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    height: height * 0.09,
-    borderRadius: 3,
-    borderColor:Colors.WHITE_COLOR,
-    borderWidth: 13,
-    justifyContent: 'center',
-    width: width*0.89,
-    elevation:3
-
-  },
   input: {
-    fontSize: 14,
+    fontSize: 16,
     fontFamily: 'century Gothic',
     opacity: 0.59,
-    textAlign: 'center',
-  }
+    textAlign: 'left',
+    color: Colors.DARKGREEN_COLOR,
+    marginHorizontal:15
+  },
 });
 
 export default CustomTextInput;
