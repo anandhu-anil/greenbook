@@ -4,17 +4,18 @@ import Home from '../screens/Home';
 import Verification from '../screens/VerificationScreen';
 import OtpScreen from '../screens/OtpScreen.js';
 import Login from '../screens/Login.js';
+import Home from '../screens/Home.js';
 
 
 const Stack = createStackNavigator();
 const HomeStackNavigator = () => {
     return (
         <Stack.Navigator
-            initialRouteName="Login">
+            initialRouteName="Home">
             <Stack.Screen
-                name="Login"
-                options={{ title: 'Login' }}
-                component={Login}
+                name="Home"
+                options={{ title: 'Home' }}
+                component={Home}
             />
         </Stack.Navigator>
     );
